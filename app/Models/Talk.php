@@ -16,6 +16,8 @@ class Talk extends Model
         'speaker_id' => 'integer',
     ];
 
+
+
     public function speaker(): BelongsTo
     {
         return $this->belongsTo(Speaker::class);
